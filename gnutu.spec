@@ -1,12 +1,13 @@
 Summary:	Student's Timetable
 Summary(pl):	Terminarz ucznia
 Name:		gnutu
-Version:	1.0
-Release:	2
+Version:	1.1
+%define         _beta      beta1
+Release:	0.%{_beta}.1
 License:	GPL
 Group:		X11/Applications
-Source0:	http://www.gnutu.org/dane/download/%{name}-%{version}.tar.gz
-# Source0-md5:	0bc90671d5f401b9ac4a5a72bd9030d5
+Source0:	http://www.gnutu.org/dane/download/%{name}-%{version}-%{_beta}.tar.gz
+# Source0-md5:	cc805614be62209bc88c14f68650a04f
 Patch0:		%{name}-desktop.patch
 URL:		http://www.gnutu.org/
 BuildRequires:	libgnomeui-devel
@@ -30,7 +31,7 @@ do zapisywania terminów sprawdzianów, notatek, ocen, umo¿liwia
 wyszukiwanie najbli¿szych klasówek.
 
 %prep
-%setup -q
+%setup -q -n %{name}-%{version}-%{_beta}
 %patch0 -p1
 
 %build
