@@ -8,20 +8,21 @@ Group:		X11/Applications
 Source0:	http://www.mkk.akcja.pl/gnutu/program/%{name}-%{version}.tar.gz
 # Source0-md5:	b3a04767c373ba89726578316be5703a
 Patch0:		%{name}-desktop.patch
-URL:		www.gnu-tu.prv.pl
+URL:		http://www.gnu-tu.prv.pl/
 BuildRequires:	libgnomeui-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-GNU Terminarz Ucznia is equivalent and continuation of windows program Terminarz Ucznia. 
-This program would be useful for all students. You could write here dates of all your tests, 
-your notices and marks. You could also use it to search for date of your nearest test.
+GNU Terminarz Ucznia is equivalent and continuation of windows program
+Terminarz Ucznia. This program would be useful for all students. You
+could write here dates of all your tests, your notices and marks. You
+could also use it to search for date of your nearest test.
 
 %description -l pl
 GNU Terminarz Ucznia jest odpowiednikiem i kontynuacj± windowsowego
-programu Terminarz Ucznia. Program przyda siê wszystkim uczniom. S³u¿y do
-zapisywania terminów sprawdzianów, notatek, ocen, umo¿liwia wyszukiwanie
-najbli¿szych klasówek.
+programu Terminarz Ucznia. Program przyda siê wszystkim uczniom. S³u¿y
+do zapisywania terminów sprawdzianów, notatek, ocen, umo¿liwia
+wyszukiwanie najbli¿szych klasówek.
 
 %prep
 %setup -q
