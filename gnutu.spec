@@ -2,7 +2,7 @@ Summary:	Student's Timetable
 Summary(pl):	Terminarz ucznia
 Name:		gnutu
 Version:	1.1
-%define         _beta      beta1
+%define		_beta	beta1
 Release:	0.%{_beta}.1
 License:	GPL
 Group:		X11/Applications
@@ -15,7 +15,7 @@ BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-GNU Student's Timetable is a polish program. It is designed for
+GNU Student's Timetable is a Polish program. It is designed for
 students from primary and secondary schools - using it, you can note
 various information (like marks, tests' dates and important school
 events). It also can create various statistics, calculate your
