@@ -1,6 +1,3 @@
-# TODO:
-# - en description
-#
 Summary:	School organizer
 Summary(pl):	Terminarz ucznia
 Name:		gnutu
@@ -16,12 +13,15 @@ BuildRequires:	libgnomeui-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
+GNU Terminarz Ucznia is equivalent and continuation of windows program Terminarz Ucznia. 
+This program would be useful for all students. You could write here dates of all your tests, 
+your notices and marks. You could also use it to search for date of your nearest test.
 
 %description -l pl
-GNU Terminarz Ucznia jest odpowiednikiem i kontynuacj windowsowego
-programu Terminarz Ucznia. Program przyda si wszystkim uczniom. Suy do
-zapisywania terminw sprawdzianw, notatek, ocen, umoliwia wyszukiwanie
-najbliszych klaswek.
+GNU Terminarz Ucznia jest odpowiednikiem i kontynuacj± windowsowego
+programu Terminarz Ucznia. Program przyda siê wszystkim uczniom. S³u¿y do
+zapisywania terminów sprawdzianów, notatek, ocen, umo¿liwia wyszukiwanie
+najbli¿szych klasówek.
 
 %prep
 %setup -q
