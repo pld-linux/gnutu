@@ -1,12 +1,12 @@
 Summary:	School organizer
 Summary(pl):	Terminarz ucznia
 Name:		gnutu
-Version:	0.3
+Version:	0.4.1
 Release:	1
 License:	GPL
 Group:		X11/Applications
-Source0:	http://www.mkk.akcja.pl/gnutu/program/%{name}-%{version}.tar.gz
-# Source0-md5:	b3a04767c373ba89726578316be5703a
+Source0:	http://www.gnutu.org/dane/download/%{name}-%{version}.tar.gz
+# Source0-md5:	66e1fa6636465ae5218a10d573fa9ac9
 Patch0:		%{name}-desktop.patch
 URL:		http://www.gnu-tu.prv.pl/
 BuildRequires:	libgnomeui-devel
@@ -43,7 +43,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog NEWS README TODO
+%doc AUTHORS ChangeLog NEWS README
 %attr(755,root,root) %{_bindir}/*
 %{_desktopdir}/*
 %{_pixmapsdir}/%{name}
+%{_datadir}/locale/pl/LC_MESSAGES/*
