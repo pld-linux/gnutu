@@ -1,0 +1,14 @@
+diff -urN aa/gnutu-0.3/gnutu.desktop gnutu-0.3/gnutu.desktop
+--- aa/gnutu-0.3/gnutu.desktop	2004-05-02 17:41:44.000000000 +0200
++++ gnutu-0.3/gnutu.desktop	2004-06-21 00:20:10.084416792 +0200
+@@ -5,7 +5,8 @@
+ Comment[pl]=GNU Terminarz Ucznia - wersja 0.3
+ TryExec=gnutu
+ Exec=gnutu
+-Icon=/usr/local/share/pixmaps/gnutu/gtu_ikonka.png
++Icon=gnutu/gtu_ikonka.png
+ Terminal=false
+ Type=Application
+-Categories=GNOME;Application;Accessories;
++Categories=GNOME;Application;Utility;
++Encoding=UTF-8
