@@ -14,9 +14,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 GNU Terminarz Ucznia is equivalent and continuation of Windows program
-Terminarz Ucznia. This program would be useful for all students. You
-could write here dates of all your tests, your notices and marks. You
-could also use it to search for date of your nearest test.
+Terminarz Ucznia. This program will be useful for all students. You
+can write here dates of all your tests, your notices and marks. You
+can also use it to search for date of your nearest test.
 
 %description -l pl
 GNU Terminarz Ucznia jest odpowiednikiem i kontynuacj± windowsowego
