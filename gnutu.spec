@@ -13,7 +13,7 @@ BuildRequires:	libgnomeui-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-GNU Terminarz Ucznia is equivalent and continuation of windows program
+GNU Terminarz Ucznia is equivalent and continuation of Windows program
 Terminarz Ucznia. This program would be useful for all students. You
 could write here dates of all your tests, your notices and marks. You
 could also use it to search for date of your nearest test.
