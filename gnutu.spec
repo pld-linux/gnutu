@@ -1,22 +1,27 @@
-Summary:	School organizer
+Summary:	Student's Timetable
 Summary(pl):	Terminarz ucznia
 Name:		gnutu
-Version:	0.4.1
+Version:	1.0
 Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.gnutu.org/dane/download/%{name}-%{version}.tar.gz
-# Source0-md5:	66e1fa6636465ae5218a10d573fa9ac9
+# Source0-md5:	2c4697519032a06aec7a017ecf2b7e24
 Patch0:		%{name}-desktop.patch
 URL:		http://www.gnu-tu.prv.pl/
 BuildRequires:	libgnomeui-devel
+BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-GNU Terminarz Ucznia is equivalent and continuation of Windows program
-Terminarz Ucznia. This program will be useful for all students. You
-can write here dates of all your tests, your notices and marks. You
-can also use it to search for date of your nearest test.
+GNU Student's Timetable is a polish program. It is designed for
+students from primary and secondary schools - using it, you can note
+various information (like marks, tests' dates and important school
+events). It also can create various statistics, calculate your
+average; it can also serve as a journal and many, many more... This
+program is a continuation of a windows program with similar name -
+Terminarz Ucznia (Student's Timetable), which's author is also Marcin
+Krzywonos.
 
 %description -l pl
 GNU Terminarz Ucznia jest odpowiednikiem i kontynuacj± windowsowego
