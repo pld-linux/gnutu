@@ -8,7 +8,7 @@ Group:		X11/Applications
 Source0:	http://www.gnutu.org/dane/download/%{name}-%{version}.tar.gz
 # Source0-md5:	0bc90671d5f401b9ac4a5a72bd9030d5
 Patch0:		%{name}-desktop.patch
-URL:		http://www.gnu-tu.prv.pl/
+URL:		http://www.gnutu.org/
 BuildRequires:	libgnomeui-devel
 BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
