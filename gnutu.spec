@@ -6,7 +6,7 @@ Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.gnutu.org/dane/download/%{name}-%{version}.tar.gz
-# Source0-md5:	2c4697519032a06aec7a017ecf2b7e24
+# Source0-md5:	0bc90671d5f401b9ac4a5a72bd9030d5
 Patch0:		%{name}-desktop.patch
 URL:		http://www.gnu-tu.prv.pl/
 BuildRequires:	libgnomeui-devel
