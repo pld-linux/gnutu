@@ -2,7 +2,7 @@ Summary:	Student's Timetable
 Summary(pl):	Terminarz ucznia
 Name:		gnutu
 Version:	1.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.gnutu.org/dane/download/%{name}-%{version}.tar.gz
