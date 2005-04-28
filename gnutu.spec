@@ -43,6 +43,9 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+ln -sf %{_pixmapsdir}/%{name}/gtu_ikonka.png \
+    $RPM_BUILD_ROOT%{_pixmapsdir}/gtu_ikonka.png
+
 %find_lang %{name}
 
 %clean
@@ -54,3 +57,4 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 %{_desktopdir}/*
 %{_pixmapsdir}/%{name}
+%{_pixmapsdir}/gtu_ikonka.png
