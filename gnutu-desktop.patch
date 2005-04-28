@@ -6,7 +6,7 @@ diff -urN gnutu-1.0.orig/gnutu.desktop gnutu-1.0/gnutu.desktop
  TryExec=gnutu
  Exec=gnutu
 -Icon=/usr/local/share/pixmaps/gnutu/gtu_ikonka.png
-+Icon=gnutu/gtu_ikonka.png
++Icon=gtu_ikonka
  Terminal=false
  Type=Application
 -Categories=GNOME;Application;Utility;
