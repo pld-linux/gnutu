@@ -9,8 +9,10 @@ Source0:	http://www.gnutu.org/dane/download/%{name}-%{version}.tar.gz
 # Source0-md5:	41692c7c1c9c785df9a255387a43408f
 Patch0:		%{name}-desktop.patch
 URL:		http://www.gnutu.org/
+BuildRequires:	gettext-devel
 BuildRequires:	libgnomeui-devel
 BuildRequires:	pkgconfig
+BuildRequires:	popt-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
