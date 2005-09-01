@@ -1,17 +1,16 @@
 Summary:	Student's Timetable
 Summary(pl):	Terminarz ucznia
 Name:		gnutu
-Version:	1.2
+Version:	2.0
 Release:	1
 License:	GPL
 Group:		X11/Applications
-Source0:	http://www.gnutu.org/dane/download/%{name}-%{version}.tar.gz
-# Source0-md5:	41692c7c1c9c785df9a255387a43408f
+Source0:	http://gnutu.org/download/sources/%{name}-%{version}.tar.gz
+# Source0-md5:	8f0dba5f8dccf01659caf674cc2a5d42
 Patch0:		%{name}-desktop.patch
 URL:		http://www.gnutu.org/
-BuildRequires:	gettext-devel
-BuildRequires:	libgnomeui-devel >= 2.0
-BuildRequires:	pkgconfig
+BuildRequires:	mono
+BuildRequires:	dotnet-gtk-sharp2-devel >= 1.9.5
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -44,9 +43,6 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-ln -sf %{_pixmapsdir}/%{name}/gtu_ikonka.png \
-    $RPM_BUILD_ROOT%{_pixmapsdir}/gtu_ikonka.png
-
 %find_lang %{name}
 
 %clean
@@ -56,6 +52,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README
 %attr(755,root,root) %{_bindir}/*
+%dir %{_libdir}/%{name}
+%{_libdir}/%{name}/gnutu.exe
 %{_desktopdir}/*
-%{_pixmapsdir}/%{name}
-%{_pixmapsdir}/gtu_ikonka.png
+%{_pixmapsdir}/gnutu.png

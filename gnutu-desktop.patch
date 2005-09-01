@@ -1,14 +1,17 @@
-diff -urN gnutu-1.0.orig/gnutu.desktop gnutu-1.0/gnutu.desktop
---- gnutu-1.0.orig/gnutu.desktop	2004-11-12 20:45:01.955779648 +0100
-+++ gnutu-1.0/gnutu.desktop	2004-11-12 20:46:24.473235088 +0100
-@@ -5,7 +5,8 @@
- Comment[pl]=GNU Terminarz Ucznia - wersja 1.0
+--- gnutu-2.0/gnutu.desktop.in.orig	2005-09-02 00:11:34.000000000 +0200
++++ gnutu-2.0/gnutu.desktop.in	2005-09-02 00:14:05.000000000 +0200
+@@ -1,10 +1,11 @@
+ [Desktop Entry]
+-Version=1.1.0
++Version=2.0
++Encoding=UTF-8
+ Name=Students Timetable
+ Name[pl]=Terminarz Ucznia
  TryExec=gnutu
  Exec=gnutu
--Icon=/usr/local/share/pixmaps/gnutu/gtu_ikonka.png
-+Icon=gtu_ikonka
+-Icon=@prefix@/share/pixmaps/gnutu.png
++Icon=gnutu.png
  Terminal=false
  Type=Application
 -Categories=GNOME;Application;Utility;
-+Categories=GTK;GNOME;Utility;
-+Encoding=UTF-8
++Categories=GTK;GNOME;Application;Utility;
