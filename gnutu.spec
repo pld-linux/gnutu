@@ -1,3 +1,4 @@
+%include	/usr/lib/rpm/macros.mono
 Summary:	Student's Timetable
 Summary(pl):	Terminarz ucznia
 Name:		gnutu
@@ -9,8 +10,10 @@ Source0:	http://gnutu.org/download/sources/%{name}-%{version}.tar.gz
 # Source0-md5:	8f0dba5f8dccf01659caf674cc2a5d42
 Patch0:		%{name}-desktop.patch
 URL:		http://www.gnutu.org/
-BuildRequires:	mono
 BuildRequires:	dotnet-gtk-sharp2-devel >= 1.9.5
+BuildRequires:	mono-csharp
+BuildRequires:	pkgconfig
+BuildRequires:	rpmbuild(monoautodeps)
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
