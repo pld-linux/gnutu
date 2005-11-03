@@ -1,12 +1,8 @@
---- gnutu-2.0/gnutu.desktop.in.orig	2005-09-02 00:11:34.000000000 +0200
-+++ gnutu-2.0/gnutu.desktop.in	2005-09-02 00:14:05.000000000 +0200
-@@ -1,10 +1,11 @@
- [Desktop Entry]
--Version=1.1.0
-+Version=2.0
-+Encoding=UTF-8
- Name=Students Timetable
- Name[pl]=Terminarz Ucznia
+diff -urN gnutu-2.1.org/gnutu.desktop.in gnutu-2.1/gnutu.desktop.in
+--- gnutu-2.1.org/gnutu.desktop.in	2005-10-29 20:50:16.747607000 +0200
++++ gnutu-2.1/gnutu.desktop.in	2005-10-29 20:51:04.057607000 +0200
+@@ -7,8 +7,7 @@
+ Name[bg]=Програма за ученици
  TryExec=gnutu
  Exec=gnutu
 -Icon=@prefix@/share/pixmaps/gnutu.png
@@ -14,4 +10,5 @@
  Terminal=false
  Type=Application
 -Categories=GNOME;Application;Utility;
+-GenericName[es_ES]=
 +Categories=GTK;GNOME;Application;Utility;
