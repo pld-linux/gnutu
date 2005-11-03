@@ -2,12 +2,12 @@
 Summary:	Student's Timetable
 Summary(pl):	Terminarz ucznia
 Name:		gnutu
-Version:	2.0
+Version:	2.1
 Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://gnutu.org/download/sources/%{name}-%{version}.tar.gz
-# Source0-md5:	8f0dba5f8dccf01659caf674cc2a5d42
+# Source0-md5:	6d38290dad5916ca06aaf28f9d24ea2c
 Patch0:		%{name}-desktop.patch
 URL:		http://www.gnutu.org/
 BuildRequires:	dotnet-gtk-sharp2-devel >= 1.9.5
@@ -55,7 +55,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README
 %attr(755,root,root) %{_bindir}/*
-%dir %{_libdir}/%{name}
-%{_libdir}/%{name}/gnutu.exe
+%{_libdir}/%{name}
 %{_desktopdir}/*
 %{_pixmapsdir}/gnutu.png
