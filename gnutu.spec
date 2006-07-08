@@ -2,15 +2,15 @@
 Summary:	Student's Timetable
 Summary(pl):	Terminarz ucznia
 Name:		gnutu
-Version:	2.3.1
+Version:	2.4
 Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://gnutu.org/download/sources/%{name}-%{version}.tar.gz
-# Source0-md5:	5f4c3ea5afc193e641f5f31deb9ccc88
+# Source0-md5:	428cb15223884d67b35e4225293cc69f
 Patch0:		%{name}-desktop.patch
 URL:		http://www.gnutu.org/
-BuildRequires:	dotnet-gtk-sharp2-devel >= 1.9.5
+BuildRequires:	dotnet-gtk-sharp2-devel >= 2.4.0
 BuildRequires:	mono-csharp
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(monoautodeps)
