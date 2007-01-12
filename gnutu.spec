@@ -1,16 +1,19 @@
+%include	/usr/lib/rpm/macros.mono
 Summary:	Student's Timetable
 Summary(pl):	Terminarz ucznia
 Name:		gnutu
-Version:	1.2
+Version:	2.5
 Release:	1
 License:	GPL
 Group:		X11/Applications
-Source0:	http://www.gnutu.org/dane/download/%{name}-%{version}.tar.gz
-# Source0-md5:	41692c7c1c9c785df9a255387a43408f
+Source0:	http://gnutu.devnull.pl/download/sources/%{name}-%{version}.tar.gz
+# Source0-md5:	3b92e24be9ee36e1f7873f17d946a0d2
 Patch0:		%{name}-desktop.patch
-URL:		http://www.gnutu.org/
-BuildRequires:	libgnomeui-devel
+URL:		http://www.gnutu.devnull.pl/
+BuildRequires:	dotnet-gtk-sharp2-devel >= 2.4.0
+BuildRequires:	mono-csharp
 BuildRequires:	pkgconfig
+BuildRequires:	rpmbuild(monoautodeps)
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -42,9 +45,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
-
-ln -sf %{_pixmapsdir}/%{name}/gtu_ikonka.png \
-    $RPM_BUILD_ROOT%{_pixmapsdir}/gtu_ikonka.png
+rm -rf $RPM_BUILD_ROOT/%{_pixmapsdir}/gnutu.ico
 
 %find_lang %{name}
 
@@ -55,6 +56,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README
 %attr(755,root,root) %{_bindir}/*
-%{_desktopdir}/*
-%{_pixmapsdir}/%{name}
-%{_pixmapsdir}/gtu_ikonka.png
+%{_libdir}/%{name}
+%{_desktopdir}/*.desktop
+%{_pixmapsdir}/gnutu.png
