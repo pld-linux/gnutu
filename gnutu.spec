@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.mono
 Summary:	Student's Timetable
-Summary(pl):	Terminarz ucznia
+Summary(pl.UTF-8):   Terminarz ucznia
 Name:		gnutu
 Version:	2.5
 Release:	1
@@ -26,11 +26,11 @@ program is a continuation of a windows program with similar name -
 Terminarz Ucznia (Student's Timetable), which's author is also Marcin
 Krzywonos.
 
-%description -l pl
-GNU Terminarz Ucznia jest odpowiednikiem i kontynuacj± windowsowego
-programu Terminarz Ucznia. Program przyda siê wszystkim uczniom. S³u¿y
-do zapisywania terminów sprawdzianów, notatek, ocen, umo¿liwia
-wyszukiwanie najbli¿szych klasówek.
+%description -l pl.UTF-8
+GNU Terminarz Ucznia jest odpowiednikiem i kontynuacjÄ… windowsowego
+programu Terminarz Ucznia. Program przyda siÄ™ wszystkim uczniom. SÅ‚uÅ¼y
+do zapisywania terminÃ³w sprawdzianÃ³w, notatek, ocen, umoÅ¼liwia
+wyszukiwanie najbliÅ¼szych klasÃ³wek.
 
 %prep
 %setup -q
