@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.mono
 Summary:	Student's Timetable
-Summary(pl.UTF-8):   Terminarz ucznia
+Summary(pl.UTF-8):	Terminarz ucznia
 Name:		gnutu
 Version:	2.5
 Release:	1
